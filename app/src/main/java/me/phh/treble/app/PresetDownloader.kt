@@ -36,7 +36,7 @@ class PresetDownloader {
                     val ctxt = ctxtWp?.get() ?: return
                     if (alreadyDownloaded) return
 
-                    var presetsUrl = "https://raw.githubusercontent.com/MP01Experiments/treble_presets/master/infos.json"
+                    var presetsUrl = "https://raw.githubusercontent.com/MP01Experiments/treble_presets/master/infos.json" // temp until stuff is merged
                     val presetsProp = SystemProperties.get("ro.system.treble.presets", "")
                     if (presetsProp.trim() != "") {
                         presetsUrl = presetsProp
