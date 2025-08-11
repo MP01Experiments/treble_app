@@ -44,4 +44,5 @@ jobs:
         cp ../TrebleApp.apk TrebleApp/app.apk
         git add TrebleApp/app.apk
         git commit -m "Up TrebleApp to TrebleDroid/treble_app@${{ steps.latest_commit.outputs.hash }}"
+        git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/MP01Experiments/vendor_hardware_overlay
         git push origin pie || true
