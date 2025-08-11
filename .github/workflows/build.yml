@@ -38,7 +38,7 @@ jobs:
       with:
         repository: MP01Experiments/vendor_hardware_overlay
         ref: pie
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.MP01_SECRET }}
         path: vendor_hardware_overlay
 
     - name: Update APK
